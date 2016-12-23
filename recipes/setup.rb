@@ -25,3 +25,5 @@ package 'libqtwebkit-dev'
 # docsplit dependencies
 package 'poppler-utils'
 package 'graphicsmagick'
+
+include_recipe 'opsworks_tko::phantomjs'
