@@ -15,12 +15,12 @@ node[:deploy].each do |application, deploy|
 
   bash 'extract' do
     cwd '~/'
-    bash "sudo tar xvjf #{version}.tar.bz2"
+    code "sudo tar xvjf #{version}.tar.bz2"
   end
 
   bash 'move' do
     cwd '~/'
-    bash "mv #{version} /usr/local/share"
+    code "mv #{version} /usr/local/share"
   end
 
   bash "ln -sf /usr/local/share/#{version}/bin/phantomjs /usr/local/bin"
