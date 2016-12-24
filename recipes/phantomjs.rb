@@ -11,7 +11,7 @@ bash 'download' do
 end
 
 bash 'extract' do
-  code "sudo tar xvjf #{version}.tar.bz2"
+  code "tar xvjf #{version}.tar.bz2"
 end
 
 bash 'move' do
