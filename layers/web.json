@@ -1,0 +1,26 @@
+{
+  "applications": ["tko"],
+  "deploy":  {
+    "tko": {
+      "global": {
+        "environment": "staging"
+      },
+      "database": {
+        "adapter": "postgresql",
+        "pool": 35
+      },
+      "appserver": {
+        "adapter": "puma",
+        "application_yml": true,
+        "preload_app": false
+      },
+      "worker": {
+        "adapter": "sidekiq",
+        "process_count": 1
+      },
+      "whenever": {
+        "roles": ["default"]
+      }
+    }
+  }
+}
