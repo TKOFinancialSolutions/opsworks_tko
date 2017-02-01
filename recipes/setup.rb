@@ -32,5 +32,5 @@ package 'libqtwebkit-dev'
 package 'poppler-utils'
 package 'graphicsmagick'
 
-include_recipe 'opsworks_tko::phantomjs'
+include_recipe 'tko::phantomjs'
 include_recipe 'opsworks_ruby::setup'
