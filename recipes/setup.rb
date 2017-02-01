@@ -6,6 +6,12 @@
 
 prepare_recipe
 
+# Create swap
+swap_file '/mnt/swap' do
+  size    2048 # MBs
+  persist true
+end
+
 package 'nodejs'
 package 'htop'
 package 'tmux'
@@ -27,3 +33,4 @@ package 'poppler-utils'
 package 'graphicsmagick'
 
 include_recipe 'opsworks_tko::phantomjs'
+include_recipe 'opsworks_ruby::setup'
