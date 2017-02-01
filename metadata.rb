@@ -1,4 +1,4 @@
-name 'opsworks_tko'
+name 'tko'
 maintainer 'Kevin Pheasey'
 maintainer_email 'kevin@kpheasey.com'
 license 'all_rights'
